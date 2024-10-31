@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./photo_2024-10-27_20-16-41.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    background-color: rgba(43, 115, 210, 0.8); 
+    border-radius: 10px;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 20px;
+    font-family: serif;
+    color: #aaaabf;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #aaaabf;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #b0b0b0;
+}
+
+.btn-browse {
+    background-color: #ffffff;
+    color: #000;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-browse:hover {
+    background-color: #e0e0e0;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.info {
+    max-width: 400px;
+}
+
+.info h1 {
+    font-size: 48px;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icona a{
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.separator {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.btn-buy {
+    display: block;
+    background-color: #ffffff;
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background-color: #e0e0e0;
+}
+
+/* NFT Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    padding: 10px;
+}
+
+.nft-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #005cff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Example for each specific item */
+.nft-item:nth-child(1) {
+    background-image: url('./photo_2024-10-31_18-10-03.jpg');
+}
+
+.nft-item:nth-child(2) {
+    background-image: url('./photo_2024-10-31_18-43-20.jpg');
+}
+
+.nft-item:nth-child(3) {
+    background-image: url('./photo_2024-10-31_18-43-24.jpg');
+}
+
+.nft-item:nth-child(4) {
+    background-image: url('./photo_2024-10-31_18-43-28.jpg');
+}
+.nft-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.nft-item:hover .overlay {
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+        margin-top: 2rem; /* Ensure space on mobile as well */
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .btn-buy {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
