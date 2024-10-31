@@ -236,12 +236,51 @@ body {
         margin-top: 2rem; /* Ensure space on mobile as well */
     }
 
+    .info h1 {
+        font-size: 36px;
+    }
+
     .grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .nft-item {
+        width: 80px;
+        height: 80px;
     }
 
     .btn-buy {
         width: 100%;
         margin-top: 1rem;
+    }
+
+    .btn-browse {
+        font-size: 12px;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns:repeat(2, 1fr);;
+        gap: 0.5rem;
+    }
+
+    .nft-item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info h1 {
+        font-size: 30px;
+    }
+
+    .btn-buy, .btn-browse {
+        font-size: 12px;
     }
 }
